@@ -28,4 +28,3 @@ let myYoutubename= "codewithharry"
 anothername= "foodcoder"
  console.log(myYoutubename);
  console.log(anothername);
- let
