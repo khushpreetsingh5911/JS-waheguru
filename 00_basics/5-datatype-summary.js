@@ -15,3 +15,17 @@ console.log(typeof myObj);
 
 //reference type(none primitive)
 //array,Objects,functions 
+
+
+// -------------------------------------------
+//        stack and heap
+// in stack primitive datatypes use
+// in heap non- primitive datatypes use
+
+
+let myYoutubename= "codewithharry"
+ let anothername= "codewithkhush"
+anothername= "foodcoder"
+ console.log(myYoutubename);
+ console.log(anothername);
+ let
