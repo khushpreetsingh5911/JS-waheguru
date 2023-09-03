@@ -58,5 +58,16 @@ console.log("user logged in ")
 }
 
 let valone;
-valone = 3 ?? 20
+// valone = 30 ?? 20
+
+// valone = null ?? 30
+valone = undefined ?? 34
 console.log(valone);
+
+// terniary operator
+
+// condition ? true : false
+ 
+const teaprice= 329
+
+teaprice<= 80 ? console.log("less than 80") : console.log("more than 80")
