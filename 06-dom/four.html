@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cahi aur code and DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>java script</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname)
+{
+    const li= document.createElement('li')
+    li.innerHTML = `${langname}`
+    document.querySelector('.language').
+    appendChild(li)
+}
+addlanguage("python")
+
+function addoptiLanguage(langname){
+    const li= document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+
+}
+addoptiLanguage('go lang')
+
+//edit the value
+
+const thirdlanguage= document.querySelector("li:nth-child(3)")
+console.log(thirdlanguage)
+const newli= document.createElement('li')
+newli.textContent= "mogo"
+thirdlanguage.replaceWith(newli)
+
+const secondlanguage=document.querySelector("li:first-child")
+//console.log(secondlanguage)
+    
+secondlanguage.outerHTML= "<li>typ0script</li>"
+
+
+//remove
+const lastlang=document.querySelector("li:last-child")
+lastlang.remove()
+</script>
+</html>
